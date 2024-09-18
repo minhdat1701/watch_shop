@@ -19,6 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.nio.CharBuffer;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -120,10 +121,10 @@ public class UserServiceImpl implements UserService {
 //        return userRepository.findById(id).orElseThrow(() -> new NotFoundException("User not found"));
 //    }
 //
-//    @Override
-//    public List<User> getAllUsers() {
-//        return userRepository.findAll();
-//    }
+    @Override
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
 //
 //    @Override
 //    public void updateUser(Long id, User user) {

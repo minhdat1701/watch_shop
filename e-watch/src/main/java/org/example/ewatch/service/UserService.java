@@ -22,10 +22,8 @@ public interface UserService {
     User updateUser(User user, UserUpdateReq req);
 
 //    UserDetailsService userDetailService();
-//    public List<User> getAllUsers();
-//    public User findUserById(Long id);
-//    public void updateUser(Long id, User user);
-//    public void deleteUser(Long id);
+    public List<User> getAllUsers();
+
 
 
 }

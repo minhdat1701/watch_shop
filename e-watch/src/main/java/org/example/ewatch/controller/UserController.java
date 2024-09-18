@@ -13,6 +13,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -37,10 +39,10 @@ public class UserController {
         userService.createUser(user);
     }
 
-//    @GetMapping
-//    public List<User> getAllUsers() {
-//        return userService.getAllUsers();
-//    }
+    @GetMapping
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
+    }
 //    @GetMapping("/{id}")
 //    public User getUserById(@PathVariable Long id) {
 //        return userService.findUserById(id);
